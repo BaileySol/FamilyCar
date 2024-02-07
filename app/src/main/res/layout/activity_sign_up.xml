@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin"
+        android:text="Sign up"
+        android:textColor="@color/pink"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_margin="30dp"
+        android:gravity="center"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstname"
+        android:layout_below="@+id/signin"
+        android:background="@color/white"
+        android:hint="First Name"
+        android:maxLines="1"
+        android:textColorHint="@color/pink"
+        android:textColor="@color/pink"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/baseline_assignment_ind_24"
+        android:drawablePadding="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastname"
+        android:layout_below="@+id/firstname"
+        android:background="@color/white"
+        android:hint="Last Name"
+        android:maxLines="1"
+        android:textColorHint="@color/pink"
+        android:textColor="@color/pink"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/baseline_assignment_ind_24"
+        android:drawablePadding="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phonenumber"
+        android:layout_below="@+id/lastname"
+        android:background="@color/white"
+        android:hint="Phone Number"
+        android:maxLines="1"
+        android:textColorHint="@color/pink"
+        android:textColor="@color/pink"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/baseline_assignment_ind_24"
+        android:drawablePadding="20dp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_below="@+id/phonenumber"
+        android:background="@color/white"
+        android:hint="Username"
+        android:maxLines="1"
+        android:textColorHint="@color/pink"
+        android:textColor="@color/pink"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/baseline_assignment_ind_24"
+        android:drawablePadding="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@+id/username"
+        android:background="@color/white"
+        android:hint="Password"
+        android:maxLines="1"
+        android:textColorHint="@color/pink"
+        android:textColor="@color/pink"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/baseline_admin_panel_settings_24"
+        android:drawablePadding="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/repeatpassword"
+        android:layout_below="@+id/password"
+        android:background="@color/white"
+        android:hint="Repeat Password"
+        android:maxLines="1"
+        android:textColorHint="@color/pink"
+        android:textColor="@color/pink"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/baseline_admin_panel_settings_24"
+        android:drawablePadding="20dp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signinbtn"
+        android:layout_below="@id/repeatpassword"
+        android:text="SIGN IN"
+        android:backgroundTint="@color/pink"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>
