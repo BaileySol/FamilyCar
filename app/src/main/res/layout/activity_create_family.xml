@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateFamilyActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/createFamily"
+        android:text="@string/create_a_family"
+        android:textColor="@color/pink"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_margin="30dp"
+        android:gravity="center"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/familyName"
+        android:layout_below="@+id/createFamily"
+        android:background="@color/white"
+        android:hint="@string/family_name"
+        android:maxLines="1"
+        android:textColorHint="@color/pink"
+        android:textColor="@color/pink"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawableStart="@drawable/person"
+        android:drawablePadding="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numMembers"
+        android:layout_below="@+id/familyName"
+        android:background="@color/white"
+        android:hint="@string/number_of_family_members"
+        android:maxLines="1"
+        android:textColorHint="@color/pink"
+        android:textColor="@color/pink"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawableStart="@drawable/number"
+        android:drawablePadding="20dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FamilyNickname"
+        android:layout_below="@+id/numMembers"
+        android:background="@color/white"
+        android:hint="Family nickname"
+        android:maxLines="1"
+        android:textColorHint="@color/pink"
+        android:textColor="@color/pink"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawableStart="@drawable/person"
+        android:drawablePadding="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@+id/FamilyNickname"
+        android:background="@color/white"
+        android:hint="Password"
+        android:maxLines="1"
+        android:textColorHint="@color/pink"
+        android:textColor="@color/pink"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/repeatpassword"
+        android:layout_below="@+id/password"
+        android:background="@color/white"
+        android:hint="Repeat Password"
+        android:maxLines="1"
+        android:textColorHint="@color/pink"
+        android:textColor="@color/pink"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="20dp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createFamilyBtn"
+        android:layout_below="@id/repeatpassword"
+        android:text="CREATE FAMILY"
+        android:backgroundTint="@color/pink"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/joinLink"
+        android:layout_below="@id/createFamilyBtn"
+        android:text="Already have a family acount?"
+        android:textSize="20sp"
+        android:textColor="@color/pink"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"/>
+
+</RelativeLayout>

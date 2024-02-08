@@ -10,8 +10,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/signin"
-        android:text="Sign up"
+        android:id="@+id/signUp"
+        android:text="@string/sign_up"
         android:textColor="@color/pink"
         android:textSize="35sp"
         android:textStyle="bold"
@@ -23,17 +23,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/firstname"
-        android:layout_below="@+id/signin"
+        android:layout_below="@+id/signUp"
         android:background="@color/white"
-        android:hint="First Name"
+        android:hint="@string/first_name"
         android:maxLines="1"
         android:textColorHint="@color/pink"
         android:textColor="@color/pink"
         android:layout_margin="10dp"
         android:padding="10dp"
-        android:drawableLeft="@drawable/baseline_assignment_ind_24"
+        android:drawableStart="@drawable/person"
         android:drawablePadding="20dp"
-        />
+        android:autofillHints=""
+        android:inputType="textPersonName" />
 
     <EditText
         android:layout_width="match_parent"
@@ -41,15 +42,17 @@
         android:id="@+id/lastname"
         android:layout_below="@+id/firstname"
         android:background="@color/white"
-        android:hint="Last Name"
+        android:hint="@string/last_name"
         android:maxLines="1"
         android:textColorHint="@color/pink"
         android:textColor="@color/pink"
         android:layout_margin="10dp"
         android:padding="10dp"
-        android:drawableLeft="@drawable/baseline_assignment_ind_24"
+        android:drawableStart="@drawable/person"
         android:drawablePadding="20dp"
-        />
+        android:autofillHints=""
+        android:inputType="text
+" />
 
     <EditText
         android:layout_width="match_parent"
@@ -57,32 +60,51 @@
         android:id="@+id/email"
         android:layout_below="@+id/lastname"
         android:background="@color/white"
-        android:hint="Email"
+        android:hint="@string/email"
         android:maxLines="1"
         android:textColorHint="@color/pink"
         android:textColor="@color/pink"
         android:layout_margin="10dp"
         android:padding="10dp"
-        android:drawableLeft="@drawable/baseline_assignment_ind_24"
+        android:drawableStart="@drawable/email"
         android:drawablePadding="20dp"
-        />
+        android:autofillHints=""
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/age"
+        android:layout_below="@+id/email"
+        android:background="@color/white"
+        android:hint="@string/age"
+        android:maxLines="1"
+        android:textColorHint="@color/pink"
+        android:textColor="@color/pink"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawableStart="@drawable/age"
+        android:drawablePadding="20dp"
+        android:autofillHints=""
+        android:inputType="number" />
 
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/username"
-        android:layout_below="@+id/email"
+        android:layout_below="@+id/age"
         android:background="@color/white"
-        android:hint="Username"
+        android:hint="@string/username"
         android:maxLines="1"
         android:textColorHint="@color/pink"
         android:textColor="@color/pink"
         android:layout_margin="10dp"
         android:padding="10dp"
-        android:drawableLeft="@drawable/baseline_assignment_ind_24"
+        android:drawableStart="@drawable/person"
         android:drawablePadding="20dp"
-        />
+        android:autofillHints=""
+        android:inputType="text" />
 
     <EditText
         android:layout_width="match_parent"
@@ -90,39 +112,70 @@
         android:id="@+id/password"
         android:layout_below="@+id/username"
         android:background="@color/white"
-        android:hint="Password"
+        android:hint="@string/password"
         android:maxLines="1"
         android:textColorHint="@color/pink"
         android:textColor="@color/pink"
         android:layout_margin="10dp"
         android:padding="10dp"
-        android:drawableLeft="@drawable/baseline_admin_panel_settings_24"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="20dp"
+        android:autofillHints=""
+        android:inputType="textPassword" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/repeatPassword"
+        android:layout_below="@+id/password"
+        android:background="@color/white"
+        android:hint="@string/repeat_password"
+        android:maxLines="1"
+        android:textColorHint="@color/pink"
+        android:textColor="@color/pink"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawableStart="@drawable/password"
         android:drawablePadding="20dp"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/repeatpassword"
-        android:layout_below="@+id/password"
+        android:id="@+id/licenseDate"
+        android:layout_below="@+id/repeatPassword"
         android:background="@color/white"
-        android:hint="Repeat Password"
+        android:hint="@string/driver_license_receiving_date"
         android:maxLines="1"
         android:textColorHint="@color/pink"
         android:textColor="@color/pink"
         android:layout_margin="10dp"
         android:padding="10dp"
-        android:drawableLeft="@drawable/baseline_admin_panel_settings_24"
-        android:drawablePadding="20dp"/>
+        android:drawableStart="@drawable/date"
+        android:drawablePadding="20dp"
+        android:autofillHints=""
+        android:inputType="date" />
+
 
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/signinbtn"
-        android:layout_below="@id/repeatpassword"
-        android:text="SIGN IN"
+        android:id="@+id/signupbtn"
+        android:layout_below="@id/licenseDate"
+        android:text="@string/sign_up"
         android:backgroundTint="@color/pink"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginLink"
+        android:layout_below="@id/signupbtn"
+        android:text="@string/already_have_an_acount"
+        android:textSize="20sp"
+        android:textColor="@color/pink"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"/>
 
 </RelativeLayout>

@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="MainActivity">
+    tools:context=".JoinFamilyActivity">
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/signin"
-        android:text="Log in"
+        android:id="@+id/JoinFamily"
+        android:text="Join a family"
         android:textColor="#c38b92"
         android:textSize="35sp"
         android:textStyle="bold"
@@ -21,10 +21,10 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/username"
-        android:layout_below="@+id/signin"
+        android:id="@+id/familyNickname"
+        android:layout_below="@+id/JoinFamily"
         android:background="@color/white"
-        android:hint="Username"
+        android:hint="Family nickname"
         android:maxLines="1"
         android:textColorHint="@color/pink"
         android:textColor="@color/pink"
@@ -38,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/password"
-        android:layout_below="@+id/username"
+        android:layout_below="@+id/familyNickname"
         android:background="@color/white"
         android:hint="Password"
         android:maxLines="1"
@@ -52,9 +52,9 @@
     <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/loginbtn"
+        android:id="@+id/joinbtn"
         android:layout_below="@id/password"
-        android:text="LOGIN"
+        android:text="JOIN FAMILY"
         android:backgroundTint="@color/pink"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"/>
@@ -62,9 +62,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/forgotpass"
-        android:layout_below="@id/loginbtn"
-        android:text="Forgot password?"
+        android:id="@+id/createFamilyLink"
+        android:layout_below="@id/joinbtn"
+        android:text="Don't have a family acount?"
         android:textSize="20sp"
         android:textColor="@color/pink"
         android:layout_centerHorizontal="true"
